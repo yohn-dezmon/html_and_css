@@ -1,0 +1,14 @@
+.animal {
+    font-weight:bold;
+    font-size:150%;
+}
+.fruit {
+  font-style:italic;
+  text-transform:lowercase;
+}
+/* .animal is a class! :D
+it's interesting that you don't need to specify the tag
+with this kind of css*/
+.thing {
+    text-decoration:underline;
+}

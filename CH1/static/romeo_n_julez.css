@@ -1,0 +1,16 @@
+.character-name {
+    font-style:italic;
+    font-family:'Monotype Corsiva';
+    font-size: 118%;
+    padding-left:15px;
+}
+
+h1 {
+    text-align:center;
+}
+
+p {
+    font-size:80%;
+    margin:0;
+    margin-bottom:2px;
+}

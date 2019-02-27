@@ -1,0 +1,93 @@
+<b>what up ho?</b>
+
+by creating an html file, you can double click on it and it will open up in your default browser.
+
+*HTML ignores new lines! so we have to use <br> to indicate a new line...
+
+
+It gets tiresome to have to keep going back and forth between Notepad and the web
+browser in order to see the results of our changes. [YES]
+
+
+„real time‟ and see its effects immediately. Among
+such sites are CodePen.io and JSFiddle.net.
+
+JSTinker = open source program for that as well!
+http://hawramani.com/wp-content/jstinker/index.html
+
+the top left box is where we type HTML, bottom right box = result.
+
+heading tags are interpreted as 'blocking' i.e. taking up a whole line
+
+while bold and italic are not! cool.
+
+
+the simplest way to add css to a document is to use the style attribute!
+The CSS
+is enclosed in quotes...
+
+to add another css element, you need to use a semi colon.
+
+for the border css element, first you specify the px width, then the color (all to one side of a
+single colon following the word border)
+
+
+Indentation + spacing doesn't matter for CSS. only the use of either "" for attributes
+or the use of ; to indicate a new CSS element :D. also curly braces are used inside the sytle tag.
+
+
+Web browsers are designed to be resilient to
+broken HTML and CSS, therefore as you can see, the rest of the HTML and CSS continue
+to function as expected.
+
+margin:0; >>>> this takes the implied space away from <p>
+
+<br> is just a line break (no spacing) A
+
+A CLASS NAME CANNOT BEGIN WITH A number.
+
+
+*If we give the class “animal” bold styling, while giving the “thing” class normal styling, the
+two cancel each other out. The computer takes the last definition (the one at the bottom) as
+the final word.
+
+*We can define the same class multiple times in the same CSS passage. Below, while the
+“thing” class‟s normal styling cancels out the “animal” class‟s bold styling, the final “animal”
+class definition has the final word, making the words appear bold.
+
+
+!important; following the left side of the column (like bold, or italic) overides other class designations.
+
+examples of CSS indicators:
+font-style:italic;
+    font-family:'Monotype Corsiva';
+    font-size: 118%; ** note number% not %number!
+
+
+you can create whitespace with padding (css)
+
+padding-left:15px;
+
+
+I don't really understand this but padding gives space inside the tag
+whereas margins gives space outside the tag...
+OHHHH ok relevant when there is a BORDER around the text!
+padding gives space WITHIN the border
+margins gives space OUTSIDE the border
+
+margin-left:15px;
+
+Percentages! % % % % % % %
+if you indicate a particular font-size for a class with css, and then indicate
+another font size for the tag that it is within, the text in the class will still be relatively
+larger or smaller to the rest of the text within the tag!
+
+If you're using pixels, the last one will overwrite the first one! :D
+
+It is best to use <span>
+tags and add the styling in the CSS. This allows us more leverage in the future.
+
+Due to certain technicalities, if we had merely done “margin-bottom:0”, this wouldn‟t have
+accomplished anything. We rather have to set the entire “margin” property to zero, then, if
+desired, we can add back some margin:
+A
