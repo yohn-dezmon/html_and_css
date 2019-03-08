@@ -91,3 +91,57 @@ Due to certain technicalities, if we had merely done “margin-bottom:0”, this
 accomplished anything. We rather have to set the entire “margin” property to zero, then, if
 desired, we can add back some margin:
 A
+
+
+----
+&nbsp; > that is a special character that you put within your HTML tag
+that represents a space!
+
+---
+DIVS
+
+Divs are like spans in that they do not carry any default styles.
+
+<div> differs from <span> in that it is blocking as opposed to inline.
+
+<div> is a block/rectangle that takes up an entire line of space!
+it is like <p> in that regard, except that it has no preset margins.
+divs are rectangles that you can put things inside of!
+
+the margin style for CSS/div adds px to all sides of the div border!
+
+*** CSS: overflow:hidden; hides anything that goes over the limit of the preset
+div height! :D
+
+overflow:scroll; allows there to be a scroll in the div! COOL!
+
+alternatively, you can get rid of this problem, by not including a CSS heigh style...
+ok cool.
+
+An empty <div> tag that does not have a height will be invisible. But if the <div> has
+visible content inside it, we can take away the height property and it will continue showing
+up.
+
+*An important use of div tags is DIV NESTING!*
+
+This allows you to put one div inside another! :D
+
+*if class b is nested within class a, and you apply a style to class a, it will also affect
+class b unless you counteract it!
+
+---
+STYLING DIVS
+
+padding is used to separate the text from the div borders.
+
+box-shadow:5px 5px 1px gray;
+
+= 5 pixels to the right, 5 pixels down, and 1 pixel larger than the original box!
+making the last pixel designation much larger just kind of creates a fuzzy shadow.
+
+*taking away the borders and keeping the shadow looks like the text is on a ramp! :D
+*border-radius:10px; > creates rounded borders (but you also need the border style!)
+
+
+*In order to easily find out the code for a color, you
+can Google “CSS color chooser”

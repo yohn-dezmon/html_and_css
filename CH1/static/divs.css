@@ -1,0 +1,13 @@
+div {
+    border:1px solid black;
+    margin:20px;
+
+}
+
+.division-b {
+    font-size:70%;
+}
+
+.division-b p {
+    font-style:italic;
+}

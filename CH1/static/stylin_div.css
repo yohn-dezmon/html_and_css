@@ -1,0 +1,19 @@
+div {
+    border:1px solid black;
+    margin:20px;
+    padding:10px;
+    border-radius:10px;
+
+}
+
+.division-a{
+    font-style:italic;
+    background:#ccc;
+}
+
+.division-b {
+    font-size:70%;
+    font-style:normal;
+    box-shadow:15px 5px 21px purple;
+    background:white;
+}
