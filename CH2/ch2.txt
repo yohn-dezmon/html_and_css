@@ -68,3 +68,85 @@ unit is used for the width of the numbering.
 
 it's also good to use em for the margins, so that if you adjust font size the spacing
 between elements will remain proportional to the font size.
+
+
+---
+
+If you use pixels to decrease the font size, your circles will become deformed.
+
+How did I create circles?
+
+I think i created a border using li:before {
+border-raidus:100%
+border:1px solid #000;
+width:1.2em
+}
+
+How did I create the list (after deleting the standard list from ol)?
+
+ol{
+counter-reset: mylist;
+}
+
+li {
+counter-increment: mylist;
+}
+
+li:before {
+content: counter(mylist)
+}
+
+How did I delete the standard list from ol?
+
+ol {
+list-style: none;
+}
+
+How did I get the circles/numbers to be on the same line?
+
+li:before {
+display: inline-block;
+}
+
+How did I make the circles more circular?
+
+li:before {
+width: 1.2em
+}
+---
+
+Centering the numbers inside the circles:
+
+li:before {
+text-align:center;
+}
+
+Making the circles stop touching eachother:
+
+li:before {
+margin-bottom:0.1em
+}
+
+What is the code for white?
+#fff
+
+What is the code for gray?
+#666
+
+
+How did we hide the borders?
+you set the border style in ol equal to 0px :D
+
+How to change the numbering style of the new numbering list?
+content: counter(mylist, lower-roman);
+
+Number formats:
+Other possible number formats to use are decimal, decimal-leading-zero, lower-roman,
+upper-roman, lower-greek, lower-latin, upper-latin, armenian, georgian, lower-alpha and
+upper-alpha.
+
+How to create the list into a static/non number list?
+
+content: 'symbol';
+
+you can use Unicode Symbols for bullet points as well! :D

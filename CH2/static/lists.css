@@ -2,16 +2,25 @@ ol {
     border:0px solid #000;
     list-style:none;
     counter-reset: mylist;
+    padding-left: 0px;
 }
 
 
 li {
     border:0px dashed #000;
-    padding-left:20px;
     font-style:italic;
     counter-increment: mylist;
+
 }
 
 li:before {
-    content: counter(mylist);
+    content: "🧀";
+    border:0px solid #000;
+    font-style:normal;
+    margin-right:0.6em;
+    border-radius:100%;
+    display:inline-block;
+    width:1.2em;
+    text-align: center;
+    margin-bottom:0.1em;
 }
