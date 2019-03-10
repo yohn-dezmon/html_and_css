@@ -1,1 +1,17 @@
-test
+ol {
+    border:0px solid #000;
+    list-style:none;
+    counter-reset: mylist;
+}
+
+
+li {
+    border:0px dashed #000;
+    padding-left:20px;
+    font-style:italic;
+    counter-increment: mylist;
+}
+
+li:before {
+    content: counter(mylist);
+}

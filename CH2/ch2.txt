@@ -1,0 +1,70 @@
+<ol> = ordered list!
+<li> = list item
+
+sequentially <li> will be recognized, and assigned 1., 2., etc.
+
+<li> is nested within <ol>
+
+<ol type='i'> changes the numbering to roman numerals.
+<ol type='A'> changes numbering to alphanumeric ordering
+
+THE <ol> tag, like the <div> tag, is a BLOCK element.
+
+for both margin and padding CSS styles, you have to indicate which direction
+i.e. padding-left:20px;
+if you just write padding:20px it will go on all directions.
+
+setting the border CSS style to 0 is the same as deleting the border except that
+this technique makes it much easier to bring back the border (less typing)
+
+if we give a style to <li> tag, it will also affect the styling of its numbering!
+
+the numbering is determined by the <ol> tags
+therefore you can edit it in the CSS of the ol, and put
+list-style:none; which gets rid of the numbering...
+
+---
+creating our own counter:
+
+counter-reset:mylist; >> this is put in the <ol> CSS and creates a new counter called mylist.
+
+counter-increment:mylist; >> this is placed in <li> and provides the steps for the list
+
+content: counter(mylist) >> this is placed in li:before CSS selector
+
+li:before >> this is a 'pseudo-selector', allows us to add content before a particular selector!
+
+li:before {
+  content: counter(mylist)
+}
+
+# this tells CSS that before every li, the value of counter(mylist) should be printed.
+
+
+Below, I have added a “border-radius” of 100%, meaning to make the borders as circular as
+possible (line 19):
+
+li:before is equivalent to a <span> tag... so it is INLINE and not BLOCK.
+
+therefore if you give it width CSS style, it won't affect the output.
+
+to make li:before into a BLOCK element use the follwing CSS style:
+
+dislay:block;
+
+making the selector/numbering a block, ends up taking up an entire line of space.
+we do not want that!
+
+solution >> display:inline-block;
+
+to make the borders of the numbering more circular... we can use the units 'em'
+instead of 'px' for pixels...
+
+em - expands and shrinks with the font size. it's supposed to represent the width of a
+capital M.
+
+in our example, you would change the font-size in the li selector and the em
+unit is used for the width of the numbering.
+
+it's also good to use em for the margins, so that if you adjust font size the spacing
+between elements will remain proportional to the font size.
