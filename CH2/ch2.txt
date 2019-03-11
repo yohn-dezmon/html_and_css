@@ -41,6 +41,11 @@ li:before {
 # this tells CSS that before every li, the value of counter(mylist) should be printed.
 
 
+---
+UNORDERED LISTS:
+
+the default for <ul> is bullet points
+
 Below, I have added a “border-radius” of 100%, meaning to make the borders as circular as
 possible (line 19):
 
@@ -150,3 +155,69 @@ How to create the list into a static/non number list?
 content: 'symbol';
 
 you can use Unicode Symbols for bullet points as well! :D
+
+
+----
+UNORDERED LISTS:
+
+<ul> default is bullet points.
+
+How can you get the bullets inside of the borders of the <li>'s?
+
+li {
+list-style:inside;
+}
+
+How would you change the shape of the bullets while keeping them inside the <li> tags?
+li {
+list-style:circle inside;
+}
+
+what kind of list does...
+li {
+list-style:circle inside;
+}
+... produce?
+
+a 1., 2., 3. list!
+
+How would you include an image as the bullet points?
+
+li {
+list-style: url('image.png');
+}
+
+
+Unfortunately, CSS doesn‟t allow
+us much control over the appearance of stuff we add through “list-style”.
+
+How to change the size of the flowers (from a url)?
+
+first set list-style to : none.
+use the li:before selector to add back the flowers [background image + content]
+
+li:before {
+background-image: url('http://hawramani.com/wp-content/uploads/2018/02/flower_small.png');
+height: 1em;
+width: 1em;
+display: inline-block;
+content: '';
+}
+
+What is a blank string?
+
+just quotation marks...
+
+How do you scale the image?
+
+by changing the background-image size!
+
+background-size: 1em 1em;
+
+Now that the background-size/image is set up, how do we adjust its size more easily?
+
+by changing the font size of the <li> tag [obviously this changes the size of the font]
+
+How would you just increase the size of the bullets?
+
+set the font-size of li:before to a different value. 
