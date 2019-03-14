@@ -1,0 +1,46 @@
+FLOATING:
+
+floating is a CSS mechanism.
+
+Where is the float added to?
+
+to the <li> tag selector!
+
+floats allow lines of text to fit onto one line of text given the line's width and the font size.
+
+what does width:40% do?
+
+it gives each list item a box that is 40% of the line width (horizontal space)
+
+Where is the horizontal width determined?
+
+in the <ul> selector tag! :D
+
+How do you give your items a uniform height?
+
+li:before {
+height: 2em;
+}
+
+How to prevent bullets from intruding into the boxes of their neighbor list items?
+
+in li {} write, list-style: inside;
+
+How do you  make sure that your words are iniside thier item blocks?
+
+make sure you adjust (1) <ul> width (px) (2) li width (%) (3) li height (em)
+
+What is another way to prevent the bullets form intruding into their neighbor's blocks?
+
+adjust the left-margin of the li tag
+
+
+Floating items to the right: This means that it goes 2, 1
+                                                      4, 3
+As opposed to floating left:
+1, 2
+3, 4
+
+This isn't so useful for lists, but floating to the right is useful for DIVS! :D
+
+  

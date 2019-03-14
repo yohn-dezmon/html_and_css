@@ -1,15 +1,22 @@
 ul {
     border:0px solid #000;
+    width: 300px;
 }
 
 li {
-    border:0px dashed #000;
+    border:1px dashed #000;
     list-style: none;
+    float: left;
+    margin: 5px;
+    margin-left: 1em;
+    width: 40%;
+    height: 6.0em;
+    font-size: 17px;
 
 }
 
 li:before {
-font-size: 30px;
+
 background-image: url('http://hawramani.com/wp-content/uploads/2018/02/flower_small.png');
 height: 1em;
 width: 1em;
