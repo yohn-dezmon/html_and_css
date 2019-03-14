@@ -43,4 +43,46 @@ As opposed to floating left:
 
 This isn't so useful for lists, but floating to the right is useful for DIVS! :D
 
-  
+if you just make two css classes for the right and left box and try to float them
+it won't work because the <div> tag isn't large enough... (when set to 5em)
+
+How to change the size of the div tag?
+
+you delete the width style from div, and move it into the .division-a, .division-b selector
+which just applies to both those classes I think.
+
+The bar that is between division a and b boxes is the div tag's border without any height.
+This happens because it is not floating...
+
+How to get rid of the line?
+
+make a selector for the div's class, and set the float style = to left.
+Then to make the box larger, make the width 100% of the horizontal space.
+
+padding can cause the width of the <div> to be greater than 100%! ut oh...
+
+How would you get all inner div tags to have the same spacing between them and be on the same line?
+
+you have to set all of their floats to the same side (using the comma delimited selector)
+and then you have to have margins between them with em units. (ALSO IN THE SAME SELETOR :D)
+
+
+Where is the border radius as far as levels go?
+
+behind the inner <div> tags..
+
+What does overflow:hidden do for the .container selector?
+
+hides the info outside of the outer div border ... :/
+
+Hmmm... if you have four boxes, and you want the fourth box to show up under the first two boxes
+and have the third box be a long veritcal box (same width as the other boxes), how would you do this?
+
+you float the long box to the right, b/c any new boxes added with that same float will end up
+underneath it.
+
+the float elements 'float' over the <p> tag, so adjusting its width won't make it fit in with the others...
+
+What does the clear:left property do?
+
+"we do not want anything on the left of our paragraph!"

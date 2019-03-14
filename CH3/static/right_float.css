@@ -1,0 +1,12 @@
+div {
+    border:1px solid black;
+    width: 5em;
+}
+
+.division-a {
+    float:left;
+}
+
+.division-b {
+    float:right;
+}
